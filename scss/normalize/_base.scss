@@ -1,0 +1,41 @@
+
+a {
+    text-decoration: none; 
+    color: $primary;
+    &:visited {
+        text-decoration-color: none;
+    }
+
+    &:hover {
+        color: $primary;    
+    }
+}
+
+
+li {
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+  }
+
+body {
+    background-color: $quinary;
+}  
+
+h1 {
+    text-align: center;
+    font-size: map-get($titulo, chico);
+    margin: 15px;
+    color: $primary
+
+}
+
+@media screen and (min-width: 1023px){
+    h1 {
+        font-size: map-get($titulo, grande);
+        margin: 40px 0;
+        color: $primary
+    }
+}

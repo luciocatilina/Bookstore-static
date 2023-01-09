@@ -1,0 +1,16 @@
+.input__boton {
+    $tiempo: 50ms;
+    margin: 20px 0;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    background-color: $secundary;
+    color: $quinary;
+    transition-duration: 100ms+$tiempo;
+    @include borde(2px, 5px);
+
+    &:hover {
+        background-color: $tertiary;
+        color: $primary;
+    }   
+}

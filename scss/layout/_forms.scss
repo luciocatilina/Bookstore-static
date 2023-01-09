@@ -1,0 +1,27 @@
+.vender, .comentario {
+    display: grid;
+    grid-template-columns: auto minmax(280px, 500px) auto;
+    grid-template-rows: minmax(300px, 500px);
+    grid-template-areas: ". form .";
+    gap: 20px;
+    margin-top: 50px;
+
+    & form {
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.label_input{
+    font-size: 1.4rem;
+    margin: 15px 0 2px 0;
+    color:$primary;
+}
+
+
+
+.comentario__textarea {
+    min-width: 280px;
+    min-height: 150px;
+}

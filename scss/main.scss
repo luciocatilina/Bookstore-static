@@ -1,0 +1,21 @@
+/*utilities*/
+@import '../scss/utilities/variables';
+@import '../scss/utilities/mixins';
+@import '../scss/utilities/functions';
+/*normalize*/
+@import '../scss/normalize/reset';
+@import '../scss/normalize/base';
+/*components*/
+@import '../scss/components/animations';
+@import '../scss/components/boton';
+@import '../scss/components/BS';
+@import '../scss/components/card';
+@import '../scss/components/carousel';
+/*general*/
+@import '../scss/general/footer';
+@import '../scss/general/header';
+/*layout*/
+@import '../scss/layout/about';
+@import '../scss/layout/forms';
+@import '../scss/layout/galeria';
+

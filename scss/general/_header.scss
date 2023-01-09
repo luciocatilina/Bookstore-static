@@ -1,0 +1,17 @@
+.navbar {
+    background-color: $quaternary;
+}
+
+.form-control:focus {
+    border: 2px solid $primary;
+}
+
+
+@media screen and (min-width:1023px) {
+    .nav_boton:hover {
+        animation-name: zoomin;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        color: $secundary;
+    }
+}

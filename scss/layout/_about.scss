@@ -1,0 +1,68 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.grid_container {
+    display: grid;
+    
+    grid-template-columns: minmax(320px, 900px);
+    grid-template-rows: minmax(180px, 400px) 280px;
+    grid-template-areas: 
+        'info'
+        'envios';
+
+    .info {
+        grid-area: info;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .img_container {
+            width: 50%;
+            min-width: 300px;
+            margin: 0 5px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .pepita {
+            width: 45%;
+            color: $primary;
+            min-width: 300px;
+            margin: 0 5px;
+
+        }
+    }
+
+    .container_envios {
+        grid-area: envios;
+        margin: 0 20px;
+        
+
+        .envios_pagos {
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            margin: auto;
+
+            &__icono {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 20px 0;
+                color: $primary;
+
+                p {
+                    font-size: 1.5rem;
+                    padding: 0 20px;
+                }
+            }
+        }
+
+    }
+}
