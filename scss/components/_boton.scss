@@ -14,3 +14,44 @@
         color: $primary;
     }   
 }
+
+.card__button {
+    opacity: 0;
+    @extend .input__boton;
+    margin: 0;
+    width: 80px;
+    height: 50px;
+    min-height: 50px;
+    border-color: $quinary;
+
+    &:hover {
+        background-color: $quinary;
+        border-color: $primary;
+    }
+
+    &:active {
+        background-color: $tertiary;
+    }
+}
+
+.container_buttom {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttom {
+    @extend .card__button;
+    opacity: 1;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 40px 0;
+}
+
+@media screen and (max-width:480px) {
+    .buttom {
+        height: 60px;
+        width: 60px;
+    }
+}

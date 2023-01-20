@@ -34,7 +34,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item nav_boton">
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
@@ -72,16 +72,26 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item div_corousel active">
-                    <img src="./assets/images/carousel/book-g1fa9bb563_1920.jpg" class="d-block w-100"
-                        alt="pinturas y dibujos de Leonardo">
+                    <picture>
+                        <source class="d-block w-100" srcset=".\assets\images\carousel\banner1.jpg" media="(max-width:480px)" alt="banner_pepita_libros">
+                        <source class="d-block w-100" srcset=".\assets\images\carousel\bannerpc1.jpg" media="(min-width:481px)" alt="banner_pepita_libros">
+                        <img src=".\assets\images\carousel\bannerpc1.jpg" class="d-block w-100" alt="banner_pepita_libros">
+                    </picture>
+                    
                 </div>
                 <div class="carousel-item div_corousel">
-                    <img src="./assets/images/carousel/book-gd67a24c28_1920.jpg" class="d-block w-100"
-                        alt="mitos griegos">
+                    <picture>
+                        <source class="d-block w-100" srcset=".\assets\images\carousel\banner2.jpg" media="(max-width:480px)" alt="banner_pepita_libros">
+                        <source class="d-block w-100" srcset=".\assets\images\carousel\bannerpc2.jpg" media="(min-width:481px)" alt="banner_pepita_libros">
+                        <img src=".\assets\images\carousel\bannerpc2.jpg" class="d-block w-100" alt="banner_pepita_libros">
+                    </picture>
                 </div>
                 <div class="carousel-item div_corousel">
-                    <img src="./assets/images/carousel/glasses-g987b22b17_1920.jpg" class="d-block w-100"
-                        alt="vistas al monte fuji">
+                    <picture>
+                        <source class="d-block w-100" srcset=".\assets\images\carousel\banner3.jpg" media="(max-width:480px)" alt="banner_pepita_libros">
+                        <source class="d-block w-100" srcset=".\assets\images\carousel\bannerpc3.jpg" media="(min-width:481px)" alt="banner_pepita_libros">
+                        <img src=".\assets\images\carousel\bannerpc3.jpg" class="d-block w-100" alt="banner_pepita_libros">
+                    </picture>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -95,6 +105,13 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <section>
+            <div class="div_h2items">
+                <h2><a href="./pages/tienda.html">Encontrá el libro que estás buscando</a></h2>
+                <h2><a href="./pages/vender.html">También podés vender los libros que ya no quieras</a></h2>
+            </div>
+        </section>
 
         <h1>Libros recomendados</h1>
 
@@ -121,7 +138,7 @@
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="./assets/images/dune - frank herbert.jpg" alt="Dune">
+                        <img src="./assets/images/dune-frank-herbert.jpg" alt="Dune">
                     </div>
                     <h4 class="card__texto">Dune</h4>
                     <h5 class="card__texto">Frank Herbert</h5>
@@ -130,7 +147,7 @@
                 </div>
                 <div class="card">
                     <div class="card__img">
-                        <img src="./assets/images/cuento de hadas- stephen king.jpg" alt="Cuento de hadas">
+                        <img src="./assets/images/cuento_de_hadas-stephen_king.jpg" alt="Cuento de hadas">
                     </div>
                     <h4 class="card__texto">Cuento de hadas</h4>
                     <h5 class="card__texto">Stephen King</h5>

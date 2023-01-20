@@ -35,7 +35,13 @@ h1 {
 @media screen and (min-width: 1023px){
     h1 {
         font-size: map-get($titulo, grande);
-        margin: 40px 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
         color: $primary
     }
+}
+
+input:active {
+    background-color: none;
+    border: none;
 }

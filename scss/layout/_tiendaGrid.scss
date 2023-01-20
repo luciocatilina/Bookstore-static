@@ -1,0 +1,15 @@
+@media screen and (min-width: 1130px) {
+
+    .tienda {
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        grid-template-areas: 
+            ". contenido .";
+
+
+        .libros {
+            grid-area: contenido 
+        }
+        
+    }
+}

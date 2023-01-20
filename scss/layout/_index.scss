@@ -1,0 +1,69 @@
+.div_h2items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+
+
+}
+
+@media screen and (max-width:480px){
+
+    .div_h2items {
+
+        padding: 20px 0px;
+
+        h2 {
+            padding: 0 10px;
+            width: 100%;
+
+            a {
+                font-size: 1.2rem;
+                text-align: start;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width:481px){
+
+    .div_h2items{
+
+        padding: 20px 0;
+
+        h2{
+            margin: 15px;
+
+            a{
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:1024px){
+    
+
+    .div_h2items {
+        h2{
+            margin: 20px;
+
+            a{
+                font-size: 2rem;
+            }
+        }
+
+        h2:hover{
+            animation-name: zoomin;
+            animation-duration: .2s;
+            animation-fill-mode: forwards;
+
+            a:hover {
+                color: $tertiary;
+            }
+        }
+    }
+}

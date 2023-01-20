@@ -1,8 +1,8 @@
-.vender, .comentario {
+.vender{
     display: grid;
-    grid-template-columns: auto minmax(280px, 500px) auto;
+    grid-template-columns: auto minmax(240px, 500px) minmax(240px, 500px) auto;
     grid-template-rows: minmax(300px, 500px);
-    grid-template-areas: ". form .";
+    grid-template-areas: ". txt form .";
     gap: 20px;
     margin-top: 50px;
 
@@ -19,9 +19,90 @@
     color:$primary;
 }
 
+.form__input {
+    background-color: $quaternary;
+    height: 30px;
+    
+    &:focus, :active {
+        border-bottom: 3px solid $primary;
+        border-left: 3px solid $primary;
+    }
+}
 
-
-.comentario__textarea {
+.form__textarea {
+    @extend .form__input;
     min-width: 280px;
     min-height: 150px;
+
+}
+
+.vender__txt {
+    grid-area: txt;
+    margin: auto;
+    color: $primary;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: $secundary;
+    }
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: auto minmax(240px, 500px) minmax(240px, 500px) auto;
+    grid-template-rows: 200px minmax(200px, 300px);
+    gap: 20px;
+    grid-template-areas: 
+        '. txt form .'
+        '. txt form .';
+
+            
+        .consulta {
+            grid-area: txt;
+            display: flex;
+            flex-direction: column;
+            justify-content: cneter;
+            align-items: center;
+            color: $primary
+        }
+
+        .comentario {
+            grid-area: form;
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+}
+
+@media screen and (max-width: 750px){
+    .vender, .contacto {
+        grid-template-columns: auto minmax(240px, 500px) auto;
+        grid-template-rows: minmax(150px, 270px) minmax(300px, 500px);
+        grid-template-areas: 
+            '. txt .'
+            '. form .';
+    
+        form {
+            grid-area: form;
+        }
+
+        &__txt {
+            grid-area: txt;
+        }
+    }
+
+    .comentario {
+        grid-area: form;
+    }
+
+    .consulta {
+        grid-area: txt;
+    }
+
+    
 }

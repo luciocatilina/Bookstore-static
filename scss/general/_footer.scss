@@ -1,17 +1,19 @@
 footer {
     background-color: #ff8c91;
 }
-
-.absoluto {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+@media screen and (min-width:750px){
+    .absoluto {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
+
 
 /*MOBILE*/
 @media screen and (max-width: 480px) {
     footer {
-        padding: 0 10px;
+        padding: 15px 10px;
     }
 
     .footer_copyright {
@@ -62,5 +64,11 @@ footer {
 
     .footer_redes div {
         width: 25%;
+
+        a:hover {
+            color: $quinary;
+        }
     }
+
+    
 }

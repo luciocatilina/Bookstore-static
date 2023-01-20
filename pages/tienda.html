@@ -9,6 +9,8 @@
     <meta name="keywords" content="libros, books, pepita, literatura, novelas, obras tetrales, cuentos">
     <title>Pepita libros | Tienda</title>
     <link rel="icon" href="../assets/images/ico/logo.ico">
+    <!--JS-->
+    <script src="../js/toTopButton.js"></script>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/3469721f4a.js" crossorigin="anonymous"></script>
     <!--Bootstrap CSS-->
@@ -33,7 +35,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item nav_boton">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -62,143 +64,199 @@
         <h1>Todos los libros</h1>
         <div class="tienda">
             <div class="libros">
-                <div class="card">
-                    <img src="../assets/images/conde.png" alt="el conde de montecristo">
+                <div class="card carrito">
+                    <div class="card__div-img">
+                        <img src="../assets/images/conde.png" alt="el conde de montecristo">
+                    </div>                
                     <h4 class="card__texto">El conde de montecristo</h4>
                     <h5 class="card__texto">Alexandre Dumas</h5>
                     <h6>Género</h6>
                     <h6>$50.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
+                <div class="card carrito">
                     <img src="../assets/images/aquiles.png" alt="la cancion de Aquiles">
                     <h4 class="card__texto">La canción de Aquiles</h4>
                     <h5 class="card__texto">Madeline Miller</h5>
                     <h6>Género</h6>
                     <h6>$60.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/fuego y sangre.png" alt="fuego y sangre">
+                <div class="card carrito">
+                    <img src="../assets/images/fuego-y-sangre.png" alt="fuego y sangre">
                     <h4 class="card__texto">Fuego y sangre</h4>
                     <h5 class="card__texto">George R. R. Martin</h5>
                     <h6>Género</h6>
                     <h6>$90.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
+                <div class="card carrito">
                     <img src="../assets/images/tolkien.png" alt="el sirmarillion">
                     <h4 class="card__texto">El Silmarillion</h4>
                     <h5 class="card__texto">J. R. R. Tolkien</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/Las Malas - Camila Sosa Villada.jpg" alt="Camila Sosa Villada">
+                <div class="card carrito">
+                    <img src="../assets/images/Las-Malas-Camila-Sosa-Villada.jpg" alt="Camila Sosa Villada">
                     <h4 class="card__texto">Las Malas</h4>
                     <h5 class="card__texto">Camila Sosa Villada</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/El pecado de oxford- mar petryk.jpg" alt="El pecado de Oxford">
+                <div class="card carrito">
+                    <img src="../assets/images/El-pecado-de-oxford-mar-petryk.jpg" alt="El pecado de Oxford">
                     <h4 class="card__texto">El pecado de Oxford</h4>
                     <h5 class="card__texto">Mar Petryk</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/meditaciones -Marco Aurelio.jpg" alt="Meditaciones">
+                <div class="card carrito">
+                    <img src="../assets/images/meditaciones-Marco-Aurelio.jpg" alt="Meditaciones">
                     <h4 class="card__texto">Meditaciones</h4>
                     <h5 class="card__texto">Marco Aurelio</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/historia de la fealdad- Humberto Eco.jpg" alt="historia de la fealdad">
+                <div class="card carrito">
+                    <img src="../assets/images/historia-de-la fealdad-Humberto-Eco.jpg" alt="historia de la fealdad">
                     <h4 class="card__texto">historia de la fealdad</h4>
                     <h5 class="card__texto">Humberto Eco</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/el arte de la guerra - sun tzu.jpg" alt="el arte de la guerra">
+                <div class="card carrito">
+                    <img src="../assets/images/el-arte-de-la-guerra-suntzu.jpg" alt="el arte de la guerra">
                     <h4 class="card__texto">el arte de la guerra</h4>
                     <h5 class="card__texto">sun tzu</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/revolucion - arturo perez-reverte.jpg" alt="revolucion">
+                <div class="card carrito">
+                    <img src="../assets/images/revolucion-arturo-perez-reverte.jpg" alt="revolucion">
                     <h4 class="card__texto">Revolución</h4>
                     <h5 class="card__texto">Arturo Perez-Reverte</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/los origenes del totalitarismo - hannah arendt.jpg"
+                <div class="card carrito">
+                    <img src="../assets/images/los-origenes-del-totalitarismo-hannah-arendt.jpg"
                         alt="los origenes del totalitarismo">
                     <h4 class="card__texto">Los origenes del totalitarismo</h4>
                     <h5 class="card__texto">Hannah Arendt</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/napoleon -andrew roberts.jpg" alt="napoleon">
+                <div class="card carrito">
+                    <img src="../assets/images/napoleon-andrew-roberts.jpg" alt="napoleon">
                     <h4 class="card__texto">Napoleón -</h4>
                     <h5 class="card__texto">Andrew Roberts</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/cuento de hadas- stephen king.jpg" alt="cuento de hadas">
+                <div class="card carrito">
+                    <img src="../assets/images/cuento_de_hadas-stephen_king.jpg" alt="cuento de hadas">
                     <h4 class="card__texto">Cuento de hadas</h4>
                     <h5 class="card__texto">Stephen King</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
-                <div class="card">
-                    <img src="../assets/images/dune - frank herbert.jpg" alt="dune">
+                <div class="card carrito">
+                    <img src="../assets/images/dune-frank-herbert.jpg" alt="dune">
                     <h4 class="card__texto">Dune</h4>
                     <h5 class="card__texto">Frank Herbert</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/Juego de tronos cancion de hielo y fiego 1 - george rr martin.jpg"
+                <div class="card carrito">
+                    <img src="../assets/images/Juego-de-tronos-cancion-de-hielo-y-fiego-1-george-rr-martin.jpg"
                         alt="Juego de tronos cancion de hielo y fiego 1 - ">
                     <h4 class="card__texto">Juego de tronos cancion de hielo y fiego 1</h4>
                     <h5 class="card__texto">George R.R. Martin</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
-                <div class="card">
-                    <img src="../assets/images/el golem gustav meyrink.jpg" alt="el golem ">
+                <div class="card carrito">
+                    <img src="../assets/images/el-golem-gustav meyrink.jpg" alt="el golem ">
                     <h4 class="card__texto">El golem </h4>
                     <h5 class="card__texto">Gustav Meyrink</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
                 <!--CARD-->
-                <div class="card">
-                    <img src="../assets/images/meteorologia aplicada a la aviacion -  gabriel baleriola, manuel ledesma.jpg"
+                <div class="card carrito">
+                    <img src="../assets/images/meteorologia-aplicada-a-la-aviacion-gabriel-baleriola,manuel-ledesma.jpg"
                         alt="meteorologia aplicada a la aviacion">
                     <h4 class="card__texto">Meteorología aplicada a la aviación</h4>
                     <h5 class="card__texto">Gabriel Baleriola y Manuel Ledesma</h5>
                     <h6>Género</h6>
                     <h6>$70.99</h6>
+                    <button class="card__button">
+                        <i class="fa-solid fa-cart-shopping 2x"></i>
+                    </button>
                 </div>
             </div>
+        </div>
+        <div class="container_buttom">
+            <button onclick="topFunction()" id="myBtn" title="Go to top" class="buttom"><i class="fa-solid fa-arrow-up fa-3x"></i></button>
         </div>
     </main>
     <footer>

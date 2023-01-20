@@ -7,3 +7,13 @@
         transform: scale(1.15);
     }
 }
+
+@keyframes zoomchico {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}

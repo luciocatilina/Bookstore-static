@@ -66,3 +66,21 @@
 
     }
 }
+
+@media screen and (max-width:480px){
+
+    .container_envios {
+        margin: 10px 0;
+    
+        .envios_pagos {
+            margin: 0;
+
+            .envios_pagos__icono {
+                p{
+                    font-size: 1rem;
+                }
+
+            }
+        }
+    }
+}
